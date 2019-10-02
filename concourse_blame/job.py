@@ -32,7 +32,7 @@ def get_latest_job(concourse_target: str, concourse_job_name: str) -> ConcourseJ
 def get_latest_committer(bare_repo_path: str, team_config: dict) -> Committer:
     return_path = os.getcwd()
     os.chdir(bare_repo_path)
-    os.system('git fetch')
+    os.system('git fetch origin master:master')
     latest_committer = os.popen("git log -1 --pretty=format:'%an'").read().replace("'", "")
     os.chdir(return_path)
     return Committer(latest_committer, team_config)
