@@ -19,6 +19,7 @@
       "succeeded": "/path/to/file.mp3",
       "failed": "/path/to/file.mp3"
     },
+    "commit": "/path/to/file.mp3",
     "start": "/path/to/file.mp3",
     "end": "/path/to/file.mp3"
   },

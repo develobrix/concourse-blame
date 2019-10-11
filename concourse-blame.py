@@ -18,7 +18,6 @@ if sys.argv[1] == '--voices':
 
 # load configuration and run app
 config_path = sys.argv[1]
-config = {}
 with open(config_path, encoding='utf-8-sig') as config_file:
     config = json.load(config_file)
 if not config:

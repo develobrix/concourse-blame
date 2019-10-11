@@ -1,6 +1,6 @@
 .idea
 venv
 __pycache__
-test.json
-.repo
+test*.json
+.*repo
 sounds
