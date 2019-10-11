@@ -74,7 +74,7 @@ class GitCommit(State):
         texts = text_config['commit']
         if len(texts) > 0:
             text = random.choice(texts)
-            return text.replace('%committer', committer.get_text())
+            return text.replace('%committer', committer.get_text(text_config))
 
     def __eq__(self, other):
         return isinstance(other, GitCommit) and self.id == other.id
