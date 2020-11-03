@@ -1,6 +1,8 @@
-# concourse-blame
+# 👉😥👈 concourse-blame
 
-concourse-blame will continuously watch your concourse jobs and play a sound notification depending on the current status.
+This tool will continuously watch your [Concourse](https://github.com/concourse/concourse) jobs and play a sound notification depending on the current status.
+
+⚠ Windows only, unfortunately.
 
 ## Requirements
 
@@ -15,7 +17,8 @@ For usage:
 
 ## Setup
 
-- Create virtual environment `virtualenv venv` and activate it
+- Create virtual environment `virtualenv venv`
+- Activate it: `venv/Scripts/activate.bat`
 - Install dependencies by running `pip install -r requirements.txt`
 
 ## Configuration
